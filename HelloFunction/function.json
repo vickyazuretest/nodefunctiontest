@@ -13,6 +13,6 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../HelloFunction/index.js",
+  "scriptFile": "index.js",
   "entryPoint": "handler"
 }
