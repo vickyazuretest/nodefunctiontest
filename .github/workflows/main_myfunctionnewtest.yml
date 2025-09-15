@@ -10,6 +10,9 @@ on:
 jobs:
   deploy:
     runs-on: windows-latest
+    permissions:
+      id-token: write       # ✅ REQUIRED for OIDC
+      contents: read        # ✅ Recommended for repo access
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,3 +30,4 @@ jobs:
           app-name: 'myfunctionnewtest'
           slot-name: 'Production'
           package: '.'
+
